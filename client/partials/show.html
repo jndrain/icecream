@@ -1,0 +1,14 @@
+<div ng-controller="userController">
+	<input type="submit" value="Logout" ng-click="logout(user)">
+</div>
+<a href="/#/">Home</a>
+<a href="">Answer this Question</a>
+<div ng-controller="answerController">
+	<h1>{{eachquest.title}}</h1>
+	<h3>{{eachquest.desc}}</h3>
+	<div ng-repeat="a in answers track by $index">
+		<p>{{a.answers}}</p>
+		<p>{{a.content}}</p>
+		<p>{{a.details}}</p>
+	</div>
+</div>
